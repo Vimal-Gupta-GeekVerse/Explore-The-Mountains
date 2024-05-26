@@ -1,0 +1,570 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+
+/* 
+<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 400 to 900 */
+
+/* .playfair-display-<para1> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <400>;
+  font-style: normal;
+} */
+
+
+.para1 {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+/* .para1 {
+  font-family: "Playfair Display";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+/* Color class Property */
+.green {
+  color: #16cb88;
+}
+
+.darkB {
+  color: #0e2b5c;
+}
+
+.darkGr {
+  color: rgb(109 127 157);
+}
+
+/* Color class Property End */
+
+.display-1 {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.secH {
+  font-size: 35px !important;
+  line-height: 1.5;
+}
+
+/* NAVBAR CSS START */
+.navbar-brand {
+  width: 5rem;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+}
+
+.navbar {
+  box-shadow: 0 5px 15px #00000029;
+  background-color: #6a38c2;
+  font-weight: 600;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+}
+
+.bg-light {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.navbar .nav-link.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* NAVBAR CSS End */
+
+/* banner section start */
+.Banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.Banner .PlayGround {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  bottom: 12.6667px;
+  scale: 1.2;
+  pointer-events: none;
+}
+
+.Banner .Cloud2 {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  animation: Cloud2 40s linear infinite alternate both;
+  pointer-events: none;
+}
+
+@keyframes Cloud2 {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+.Banner .Cloud1 {
+  position: absolute;
+  right: -50%;
+  top: 0;
+  z-index: 1;
+  animation: Cloud1 40s linear infinite alternate both;
+  pointer-events: none;
+}
+
+@keyframes Cloud1 {
+  0% {
+    right: -50%;
+  }
+
+  100% {
+    right: 50%;
+  }
+}
+
+.Banner .CleanSky {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.Banner .Man {
+  position: absolute;
+  left: 50px;
+  bottom: 120px;
+  width: 52px;
+  height: 54px;
+  z-index: 4;
+}
+
+
+.Banner .col-md-6 {
+  margin-top: 40px;
+}
+
+.Banner .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Banner .container .display-1,
+.navbar2 .Navtext span {
+  color: #2b3d5c;
+}
+
+.Banner .container .display-1 span,
+.navbar2 .Navtext span {
+  color: #5a5a5a;
+}
+
+/* banner End */
+
+/* navbar2 */
+.navbar2 {
+  position: relative;
+}
+
+.navbar2 .navbar-brand {
+  width: 18rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar2 .navbar-brand>span {
+  width: 30%;
+  display: inline-block;
+}
+
+.navbar2 .nav-link {
+  color: #5a5a5a;
+  text-decoration: underline;
+}
+
+.navbar2 .nav-link.active {
+  color: #2b3d5c;
+  text-decoration: underline;
+}
+
+.navbar2 .Navtext {
+  width: 70%;
+  display: inline-block;
+}
+
+.navbar2 .Navtext span {
+  display: table;
+}
+
+/* history */
+.defaultPadding {
+  padding: 70px 0;
+  position: relative;
+}
+
+.HISTORY {
+  background: url("../image/pexels-pixabay-270739.jpg") no-repeat center;
+  background-size: cover;
+  padding-bottom: 0;
+}
+
+.section3 .container.defaultPadding {
+  padding: 70px 12px;
+}
+
+.HISTORY h2.secH,
+.section3 h2.secH {
+  font-weight: 900 !important;
+  color: #2b3d5c;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.HISTORY h2.secH span,
+.section3 h2.secH span {
+  color: #888888;
+  position: absolute;
+  font-size: 90px;
+  bottom: -38px;
+  left: -98px;
+}
+
+.section3 h2.secH span {
+  left: -110px;
+}
+
+.ChefRecommends {
+  background-color: #103a8577;
+  margin-top: 300px;
+}
+
+.ChefRecommends .owl-carousel .item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.ChefRecommends .owl-carousel .item .Myratio {
+  aspect-ratio: 4/3;
+}
+
+.ChefRecommends .textpart {
+  padding-top: 30px;
+  color: #ffffff;
+}
+
+.ChefRecommends .textpart i {
+  color: var(--yellow);
+}
+
+.ChefRecommends .owl-carousel {
+  position: relative;
+}
+
+.ChefRecommends .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.ChefRecommends .owl-carousel .owl-nav button span {
+  background: none;
+  color: #000000;
+  text-shadow: 0px 0px 2px #ffffff;
+  border: none;
+  padding: 0 !important;
+  font-size: 70px;
+  pointer-events: auto;
+}
+
+.Accordian {
+  background-color: #103b85b2;
+  padding: 0 50px;
+}
+
+.Accordian .nav-linkmy {
+  display: inline-block;
+  padding: 5px 20px;
+  color: #b6b6b6;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Accordian .nav-linkmy.active {
+  background-color: #b6b6b6;
+  color: #103b85b2;
+}
+
+.sectionImg {
+  position: relative;
+}
+
+.sectionImg .col-auto {
+  background-color: #ffffffc5;
+  padding: 30px;
+}
+
+.sectionImg .col-auto ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sectionImg .col-auto ul li {
+  margin-top: 10px;
+}
+
+.sectionImg .col-auto ul li span {
+  margin-right: 20px;
+}
+
+.sectionImg .container {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+}
+
+.sectionImg .container .secH,
+.sectionImg .container ul {
+  display: inline-block;
+  margin: auto;
+}
+
+.AccordianBootstrap .BgHead {
+  background-color: #103b85b2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.AccordianBootstrap .accordion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.AccordianBootstrap .accordion-button {
+  padding: 1rem 1.5rem;
+}
+
+.AccordianBootstrap .accordion-button::after {
+  visibility: hidden;
+}
+
+.AccordianBootstrap .accordion-item {
+  border: 0;
+}
+
+.AccordianBootstrap .accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+.accordion-item {
+background-color: transparent;
+}
+
+.AccordianBootstrap .accordion-button {
+  position: relative;
+}
+.accordion-button{
+  color: #b6b6b6;
+  background-color: transparent;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: #b6b6b6;
+  color: #103b85b2;
+}
+
+#collapseOne,#collapseTwo{
+  width: 100%;
+}
+#collapseOne .accordion-body,#collapseTwo .accordion-body{
+padding: 0;
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+  .HISTORY .secH {
+    margin-left: 100px;
+    display: table;
+  }
+
+  #section3 .secH {
+    margin-left: 100px;
+    display: table;
+  }
+
+  #section3 .sectionImg .secH {
+
+    margin: auto;
+  }
+  .Banner .col-md-6 {
+    margin-top: -20px;
+  }
+  
+}
+
+@media (max-width: 1199.98px) {
+  .Banner .col-md-6 {
+    margin-top: -60px;
+  }
+
+  .Banner .Man {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 52px;
+    height: 54px;
+    z-index: 4;
+}
+  
+}
+
+@media (max-width: 991.98px) {
+  .display-1 {
+    font-size: 60px;
+  }
+
+  .Banner .Man {
+    bottom: 80px;
+    left: 50px;
+}
+.Banner .col-md-6 {
+  margin-top: -10px;
+}
+  
+}
+
+@media (max-width: 767.98px) {
+  .display-1 {
+    font-size: 42px;
+  }
+  .Banner .Man {
+    bottom: 50px;
+    left: 50px;
+}
+}
+
+@media (max-width: 575.98px) {
+  .display-1 {
+    font-size: 40px;
+  }
+  .Banner .container .display-1{
+    width: 60%;
+}
+.AccordianBootstrap .BgHead .accordion-button::after{
+display: none;
+}
+.AccordianBootstrap .BgHead .accordion-button{
+
+  font-size: 20px;
+  padding: 10px;
+}
+.Banner .Man {
+  scale: 0.5;
+  bottom: 40px;
+  left: 10px;
+}
+  .navbar {
+    box-shadow: 0 5px 15px #00000029;
+    font-weight: 600;
+    position: relative;
+  }
+
+  .navbar .nav-link {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .navbar .nav-link.active {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .navbar2 .navbar-brand {
+    width: 11rem;
+  }
+
+  .sectionImg .container {
+    position: static;
+  }
+
+  .sectionImg .container .row {
+    justify-content: center;
+  }
+
+  .sectionImg {
+    padding: 70px 0;
+    background-color: #2b3d5c;
+  }
+}
+@media (max-width: 414px) {
+  .display-1 {
+    font-size: 30px;
+  }
+  .Banner .container .display-1{
+    width: 60%;
+}
+.Banner .Man {
+  scale: 0.4;
+  bottom: 20px;
+  left: 0px;
+}
+}
