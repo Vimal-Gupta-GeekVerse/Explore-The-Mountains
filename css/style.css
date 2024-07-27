@@ -10,16 +10,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
 
-/* 
-<uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 400 to 900 */
-
-/* .playfair-display-<para1> {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <400>;
-  font-style: normal;
-} */
 
 
 .para1 {
@@ -30,12 +20,7 @@ body {
   font-variation-settings:
     "ELSH" 0;
 }
-/* .para1 {
-  font-family: "Playfair Display";
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
+
 /* Color class Property */
 .green {
   color: #16cb88;
@@ -489,7 +474,18 @@ padding: 0;
 .Banner .col-md-6 {
   margin-top: -10px;
 }
-  
+.navbar {
+  box-shadow: 0 5px 15px #00000029;
+  font-weight: 600;
+  position: relative;
+}
+.navbar .nav-link.active {
+  color: #000000;
+}
+.navbar .nav-link {
+  color: #000000;
+}
+
 }
 
 @media (max-width: 767.98px) {
